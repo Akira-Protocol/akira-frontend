@@ -1,3 +1,5 @@
+import Overview from "./overview/overview";
+
 interface MainContentProps {
   activeTab: string;
 }
@@ -6,7 +8,7 @@ export default function MainContent({ activeTab }: MainContentProps) {
   return (
     <div className="p-6">
       {activeTab === "overview" && (
-        <div>Overview Content</div>
+        <Overview />
       )}
       {activeTab === "campaigns" && (
         <div>Campaigns Content</div>
